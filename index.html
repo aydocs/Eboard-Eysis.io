@@ -1,0 +1,1401 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!-- Primary Meta Tags -->
+    <title>EysisBoard</title>
+    <meta name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="title" content="EysisBoard">
+    <meta name="author" content="EysisBoard Team">
+    <meta name="description"
+      content="Free Multi Platform Whiteboard Application by EysisBoard Team">
+    <meta name="keywords"
+      content="bootstrap, bootstrap 5, bootstrap 5 one page, bootstrap 5 mobile application, one page template, bootstrap 5 one page template, EysisBoard Team, EysisBoard Team one page, one page template bootstrap 5" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://eboard.eysis.io">
+    <meta property="og:title" content="EysisBoard">
+    <meta property="og:description"
+      content="Free Multi Platform Whiteboard Application by EysisBoard Team">
+
+    <!-- jQuery ve Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <!--Bootstrap Css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap-grid.min.css"
+      integrity="sha512-i1b/nzkVo97VN5WbEtaPebBG8REvjWeqNclJ6AItj7msdVcaveKrlIIByDpvjk5nwHjXkIqGZscVxOrTb9tsMA=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://eboard.eysis.io">
+    <meta property="twitter:title" content="EysisBoard">
+    <meta property="twitter:description"
+      content="Free Multi Platform Whiteboard Application by EysisBoard Team">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="120x120"
+      href="./assets/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32"
+      href="./assets/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16"
+      href="./assets/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="./assets/img/favicon/safari-pinned-tab.svg"
+      color="#ffffff">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Fontawesome -->
+    <link type="text/css"
+      href="./vendor/@fortawesome/fontawesome-free/css/all.min.css"
+      rel="stylesheet">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Swipe CSS -->
+    <link type="text/css" href="./css/swipe.css" rel="stylesheet">
+
+    <!-- Vue JS-->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <!-- NOTICE: You can use the _analytics.html partial to include production code specific code & trackers -->
+  </head>
+  <body>
+    <div id="loader" class="loader">
+      <div>
+        <ul>
+          <li>
+            <svg fill="currentColor" viewBox="0 0 90 120">
+              <path
+                d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z"></path>
+            </svg>
+          </li>
+          <li>
+            <svg fill="currentColor" viewBox="0 0 90 120">
+              <path
+                d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z"></path>
+            </svg>
+          </li>
+          <li>
+            <svg fill="currentColor" viewBox="0 0 90 120">
+              <path
+                d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z"></path>
+            </svg>
+          </li>
+          <li>
+            <svg fill="currentColor" viewBox="0 0 90 120">
+              <path
+                d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z"></path>
+            </svg>
+          </li>
+          <li>
+            <svg fill="currentColor" viewBox="0 0 90 120">
+              <path
+                d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z"></path>
+            </svg>
+          </li>
+          <li>
+            <svg fill="currentColor" viewBox="0 0 90 120">
+              <path
+                d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z"></path>
+            </svg>
+          </li>
+        </ul>
+      </div>
+      <span>Loading</span>
+    </div>
+    <div class="content" style="display: none;">
+      <header class="header-global" id="home">
+        <nav id="navbar-main" aria-label="Primary navigation" class="navbar navbar-main navbar-expand-lg navbar-theme-primary headroom navbar-light navbar-theme-secondary">
+          <div class="container position-relative">
+            <a class="navbar-brand mr-lg-4" href="./index.html">
+              <img class="navbar-brand-dark" src="./assets/img/light.svg" alt="Logo light">
+              <img class="navbar-brand-light" src="./assets/img/dark.svg" alt="Logo dark">
+            </a>
+            <div class="navbar-collapse collapse mr-auto" id="navbar_global">
+              <div class="navbar-collapse-header">
+                <div class="row">
+                  <div class="col-6 collapse-brand">
+                    <a href="./index.html">
+                      <img src="./assets/img/dark.svg" alt="Logo dark">
+                    </a>
+                  </div>
+                  <div class="col-6 collapse-close">
+                    <a href="#navbar_global" class="fas fa-times" data-toggle="collapse" data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="true" title="close" aria-label="Toggle navigation" @click="closeMenu"></a>
+                  </div>
+                </div>
+              </div>
+              <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
+                <li class="nav-item">
+                  <a href="index.html" class="nav-link" @click="closeMenu">EysisBoard®</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#faq" class="nav-link" @click="closeMenu">SSS</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#properties" class="nav-link" @click="closeMenu">Özellikler</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#contact" class="nav-link" @click="closeMenu">İletişim</a>
+                </li>
+                <li class="nav-item d-md-none"> <!-- Sadece mobilde görünsün -->
+                  <a href="#yayinevi" class="btn btn-md btn-tertiary text-white animate-up-2" data-toggle="modal" data-target="#exampleModal" @click="closeMenu">Yayınevi Başvurusu <i class="fas fa-rocket ml-2"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="d-flex align-items-center">
+              <a href="#download" class="btn btn-outline-soft d-none d-md-inline mr-md-3 animate-up-2">Ücretsiz İndir</a>
+              <a href="#yayinevi" class="btn btn-md btn-tertiary text-white d-none d-md-inline animate-up-2" data-toggle="modal" data-target="#exampleModal">Yayınevi Başvurusu <i class="fas fa-rocket ml-2"></i></a>
+              <button class="navbar-toggler ml-2" type="button" data-toggle="collapse" data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation" @click="closeMenu">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div id="app2">
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">İletişim Formu</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                        </button>
+                    </div>
+    
+                    <div class="modal-body">
+                      <form class="form" @submit.prevent="submitForm">
+                        <p class="title">İletişim Formu</p>
+                        <label>
+                            <input v-model="yayinevi" required placeholder="" type="text" class="input">
+                            <span class="span2">Yayınevi İsmi</span>
+                        </label>
+                        <label>
+                            <input v-model="fullName" required placeholder="" type="text" class="input">
+                            <span class="span2">Temsilcinin Adı Soyadı</span>
+                        </label>
+                        <label>
+                            <input v-model="email" required placeholder="" type="email" class="input">
+                            <span class="span2">E-Posta Adresiniz</span>
+                        </label>
+                        <label>
+                            <input v-model="phonenumber" required placeholder="" type="tel" class="input">
+                            <span class="span2">Telefon Numaranız</span>
+                        </label>
+                        <label>
+                            <input v-model="subject" required placeholder="" type="text" class="input">
+                            <span class="span2">Konu</span>
+                        </label>
+                        <label>
+                            <textarea v-model="message" required placeholder="" class="input"></textarea>
+                            <span class="span2">Mesajınız</span>
+                        </label>
+                        <button class="submit" type="submit" :disabled="loading">
+                            <span v-if="loading">Gönderiliyor...</span>
+                            <span v-else>Mesajı Gönder</span>
+                        </button>
+                    </form>
+                    <transition name="fade">
+                        <div v-if="messageVisible" class="message" :class="{'success': success, 'error': error}">
+                            {{ success || error }}
+                            <div class="progress" :style="{ width: progressWidth + '%' }"></div> <!-- Çizgi -->
+                        </div>
+                    </transition>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+      
+
+      <main>
+        <!-- Hero -->
+        <section class="section section-header text-dark pb-md-8">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-12 col-md-10 text-center mb-5 mb-md-7">
+                <h1 class="display-2 font-weight-bolder mb-5">
+                  Basit & Etkili
+                </h1>
+                <p class="lead mb-4 mb-lg-5">EysisBoard® Bilgisayar, Tablet ve
+                  Telefonlar dahil; sahip olduğunuz tüm
+                  cihazlar üzerinde senkron çalışmalar yapabilmeniz için
+                  geliştiriliyor...</p>
+                <div>
+                  <a href="#" class="btn btn-dark btn-download-app  mt-2">
+                    <span class="d-flex align-items-center">
+                      <span class="icon icon-brand mr-2 mr-md-3"><span
+                          class="fab fa-windows"></span></span>
+                      <span class="d-inline-block text-left">
+                        <small
+                          class="font-weight-normal d-none d-md-block">Windows</small>
+                        İndir (64 Bit)
+                      </span>
+                    </span>
+                  </a>
+                  <a href="#" class="btn btn-dark btn-download-app  mt-2">
+                    <span class="d-flex align-items-center">
+                      <span class="icon icon-brand mr-2 mr-md-3"><span
+                          class="fab fa-linux"></span></span>
+                      <span class="d-inline-block text-left">
+                        <small
+                          class="font-weight-normal d-none d-md-block">Linux /
+                          Pardus</small> İndir (64 Bit)
+                      </span>
+                    </span>
+                  </a>
+                  <a href="#" class="btn btn-dark btn-download-app  mt-2">
+                    <span class="d-flex align-items-center">
+                      <span class="icon icon-brand mr-2 mr-md-3"><span
+                          class="fab fa-apple"></span></span>
+                      <span class="d-inline-block text-left">
+                        <small
+                          class="font-weight-normal d-none d-md-block">MacOS</small>
+                        İndir (64 Bit)
+                      </span>
+                    </span>
+                  </a>
+                  <a href="#" class="btn btn-dark btn-download-app  mt-2">
+                    <span class="d-flex align-items-center">
+                      <span class="icon icon-brand mr-2 mr-md-3"><span
+                          class="fab fa-apple"></span></span>
+                      <span class="d-inline-block text-left">
+                        <small
+                          class="font-weight-normal d-none d-md-block">IOS</small>
+                        App Store
+                      </span>
+                    </span>
+                  </a>
+                  <a href="#" class="btn btn-dark btn-download-app mt-2">
+                    <span class="d-flex align-items-center">
+                      <span class="icon icon-brand mr-2 mr-md-3"><span
+                          class="fab fa-google-play"></span></span>
+                      <span class="d-inline-block text-left">
+                        <small
+                          class="font-weight-normal d-none d-md-block">Android</small>
+                        Google Play
+                      </span>
+                    </span>
+                  </a>
+
+                </div>
+              </div>
+              <div class="col-12 col-md-10 justify-content-center">
+                <img class="d-none d-md-inline-block"
+                  src="https://eboard.eysis.io/assets/img/illustrations/scene.svg"
+                  alt="Mobile App Mockup">
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section section-lg py-0">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
+                <div class="card border-0 bg-white text-center p-1">
+                  <div class="card-header bg-white border-0 pb-0">
+                    <div class="icon icon-lg icon-primary mb-4">
+                      <span class="fas fa-video"></span>
+                    </div>
+                    <h2 class="h3 text-dark m-0">Videolar </h2>
+                  </div>
+                  <div class="card-body">
+                    <p>
+                      Entegre video oynatıcı ile video içerikleri izletin,
+                      resimler görüntüleyin
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
+                <div class="card border-0 bg-white text-center p-1">
+                  <div class="card-header bg-white border-0 pb-0">
+                    <div class="icon icon-lg icon-primary mb-4">
+                      <span class="fas fa-gamepad"></span>
+                    </div>
+                    <h2 class="h3 text-dark m-0">Oyunlar</h2>
+                  </div>
+                  <div class="card-body">
+                    <p>
+                      Ders işlemeyi ve öğrenmeyi daha eğlenceli hale getiren
+                      oyunlar oynatın
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="card border-0 bg-white text-center p-1">
+                  <div class="card-header bg-white border-0 pb-0">
+                    <div class="icon icon-lg icon-primary mb-4">
+                      <span class="fas fa-book-open"></span>
+                    </div>
+                    <h2 class="h3 text-dark m-0">Yayınlar</h2>
+                  </div>
+                  <div class="card-body">
+                    <p>
+                      En kaliteli Yayınevlerinin etkileşimli içeriklerine
+                      erişin
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="card border-0 bg-white text-center p-1">
+                  <div class="card-header bg-white border-0 pb-0">
+                    <div class="icon icon-lg icon-primary mb-4">
+                      <span class="fas fa-cloud"></span>
+                    </div>
+                    <h2 class="h3 text-dark m-0">Eysis®</h2>
+                  </div>
+                  <div class="card-body">
+                    <p>
+                      Eysis® ile entegre yoklama alın, Quiz yapın, SMS
+                      gönderin, istatistikleri raporlayın
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="card border-0 bg-white text-center p-1">
+                  <div class="card-header bg-white border-0 pb-0">
+                    <div class="icon icon-lg icon-primary mb-4">
+                      <span class="fas fa-poll"></span>
+                    </div>
+                    <h2 class="h3 text-dark m-0">Anketler & Quizler</h2>
+                  </div>
+                  <div class="card-body">
+                    <p>
+                      Akıllı tahta üzerinde çevrimiçi anlık canlı Quizler ve
+                      Anketler oluşturun
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="card border-0 bg-white text-center p-1">
+                  <div class="card-header bg-white border-0 pb-0">
+                    <div class="icon icon-lg icon-primary mb-4">
+                      <span class="fas fa-id-card"></span>
+                    </div>
+                    <h2 class="h3 text-dark m-0">Kimlik Kartı</h2>
+                  </div>
+                  <div class="card-body">
+                    <p>
+                      NFC bazlı kurumsal kimlik kartlarınız ile Akıllı
+                      Tahtanızı izinsiz kullanımlardan koruyun
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section section-lg" id="about">
+          <div class="container">
+            <div class="row justify-content-center mb-5 mb-lg-7">
+              <div class="col-12 col-lg-8 text-center">
+                <h2 class="h1 mb-4">Birçok Yönden En iyisi</h2>
+                <p class="lead">Çalışmalarınızı birçok cihaz üzerinden
+                  paylaşın, yedekleyin. Ders işlemeyi daha çekici ve
+                  güvenli hale getirin. Entegre yazım araçları ile PDF ve JPG
+                  formatında A4 çıktılar üretin...</p>
+              </div>
+            </div>
+            <div class="row row-grid align-items-center">
+              <div class="row justify-content-center mt-5">
+                <div class="col-12">
+                  <!--Accordion-->
+                  <div class="accordion" id="accordionExample">
+                    <section class="section section-lg" id="about">
+                      <div class="container">
+                        <div class="row row-grid align-items-center mb-5 mb-lg-7">
+                          <div class="col-12 col-lg-6">
+                            <h2 class="mb-4">Lorem ipsum dolor sit amet</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                               Praesentium, debitis, delectus eum aliquam fuga suscipit vero odio perspiciatis tempore.</p>
+                            <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit... 
+                              Sit amet, consectetur adipisicing elit..</p>
+                            <!-- Modal trigger button -->
+                            <a href="#" class="btn btn-dark mt-3 animate-up-2" data-toggle="modal" data-target="#myModal">
+                              Özellikleri Görün
+                              <span class="icon icon-xs ml-2">
+                                <i class="fas fa-external-link-alt"></i>
+                              </span>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="myModalLabel">Eğitici Video</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <!-- Responsive Video -->
+                    <div class="embed-responsive embed-responsive-16by9">
+                      <video src="./assets/vid/egitim.mp4" controls autoplay></video>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Kapat</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+            
+            <div class="row row-grid align-items-center mb-5 mb-lg-7">
+              <div class="col-12 col-lg-6">
+                <h2 class="mb-4">Öğrenmenin Eğlenceli Yolu</h2>
+                <p>EysisBoard® ile öğrencilerin derse olan dikkatini arttırın.
+                  Derslerinizi, görsel ve işitsel içeriklerle
+                  daha verimli hale getirin.</p>
+                <p>En kaliteli Yayınevlerinin önceden hazırlanmış ders
+                  içeriklerini öğrencilerinizle buluşturun. Öğrencilere
+                  derse dahil olacaları hazır oyunlar oynatın, aktif öğrenmeye
+                  teşvik edin.</p>
+                <p>Quizler ve Anketlerle katılımı arttırın, katılımcıların
+                  odağını ders boyunca üzerinizde tutun!</p>
+                <a href="#" class="btn btn-dark mt-3 animate-up-2">
+                  Learn More
+                  <span class="icon icon-xs ml-2">
+                    <i class="fas fa-external-link-alt"></i>
+                  </span>
+                </a>
+              </div>
+              <div class="col-12 col-lg-5 ml-lg-auto">
+                <img src="https://eboard.eysis.io/assets/img/illustrations/scene-3.svg"
+                  class="w-100" alt="">
+              </div>
+            </div>
+            <div class="row row-grid align-items-center mb-5 mb-lg-7">
+              <div class="col-12 col-lg-6 order-lg-2">
+                <h2 class="mb-4">Yöneticilerin Aradığı Uygulama</h2>
+                <p>Eğitmenlerin aktif olarak Akıllı Tahtayı ne kadar süre
+                  kullandıklarını görün. Yıllık ders planına ne
+                  ölçüde uyduklarını takip edin!</p>
+                <p>Eğitmen harici kişilerin Akıllı Tahtayı yetkisiz
+                  kullanımasının önüne geçin. Dilerseniz Kurumunuza Özel
+                  NFC kartlar ile Akıllı Tahtanızın kart ile kullanılmasını
+                  zorlayın. </p>
+                <a href="#" class="btn btn-dark mt-3 animate-up-2">
+                  Learn More
+                  <span class="icon icon-xs ml-2">
+                    <i class="fas fa-external-link-alt"></i>
+                  </span>
+                </a>
+              </div>
+              <div class="col-12 col-lg-5 mr-lg-auto">
+                <img src="https://eboard.eysis.io/assets/img/illustrations/scene-2.svg"
+                  class="w-100" alt="">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <div class="card border-light p-4">
+                  <div class="card-body">
+                    <h2 class="display-2 mb-2">96%</h2>
+                    <span>2023 yılı, yapılan anketlerde elde edilen ortalama
+                      memnuniyet oranı .</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <div class="card border-light p-4">
+                  <div class="card-body">
+                    <h2 class="display-2 mb-2">12/7</h2>
+                    <span> Destek ekibimiz, haftanın 7 günü 12 saat boyunca
+                      sizi dinlemek için hazır.</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <div class="card border-light p-4">
+                  <div class="card-body">
+                    <h2 class="display-2 mb-2">220k+</h2>
+                    <span>3 Kıtada 4 ülkeden, 200 Binden fazla indirme.<br />
+                      Hemen deneyin...</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <main>
+        </div>
+        <section class="section section-lg" id="faq">
+          <div class="container">
+            <div class="row justify-content-center mb-5">
+              <div class="col-12 text-center mb-4 mb-lg-5">
+                <h2 class="display-3 mb-4">Sık Sorulan Sorular</h2>
+                <p class="lead">Aşağıda en sık karşılaşılan sorulara ve
+                  cevaplarına yer verilmiştir. <br />Bunlar
+                  haricindeki sorularınız için bizimle irtibata geçmekten
+                  çekinmeyin.</p>
+              </div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-12 col-md-10">
+                <!--Accordion-->
+                <div class="accordion" id="accordionExample">
+                  <div class="card border-light mb-0">
+                    <div class="card-header" id="headingOne">
+                      <h2 class="mb-0">
+                        <button
+                          class="btn btn-link btn-block d-flex justify-content-between text-left"
+                          type="button"
+                          data-toggle="collapse" data-target="#collapseOne"
+                          aria-expanded="true"
+                          aria-controls="collapseOne">
+                          <span class="h6 mb-0 font-weight-bold">Uygulamanın
+                            amacı nedir?</span>
+                          <span class="icon"><span
+                              class="fas fa-plus"></span></span>
+                        </button>
+                      </h2>
+                    </div>
+                    <div id="collapseOne" class="collapse show"
+                      aria-labelledby="headingOne"
+                      data-parent="#accordionExample">
+                      <div class="card-body">
+                        <p class="mb-0">
+                          EysisBoard®, dijital tahtaların daha etkin ve
+                          etkileşimli olarak kullanılmasını teşvik etmek,
+                          nitelikli yayınevlerinin dijital içeriklerini
+                          eğitimci ve öğrencilerle buluşturmak ve derslerin
+                          daha verimli işlenmesini sağlamak amacıyla EYSIS®
+                          ekosisteminin bir parçası olarak
+                          geliştirilmektedir.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card border-light mb-0">
+                    <div class="card-header" id="headingTwo">
+                      <h2 class="mb-0">
+                        <button
+                          class="btn btn-link btn-block d-flex justify-content-between text-left"
+                          type="button"
+                          data-toggle="collapse" data-target="#collapseTwo"
+                          aria-expanded="false"
+                          aria-controls="collapseTwo">
+                          <span class="h6 mb-0 font-weight-bold">Uygulama
+                            hangi işletim sistemlerinde çalışmaktadır?</span>
+                          <span class="icon"><span
+                              class="fas fa-plus"></span></span>
+                        </button>
+                      </h2>
+                    </div>
+                    <div id="collapseTwo" class="collapse"
+                      aria-labelledby="headingTwo"
+                      data-parent="#accordionExample">
+                      <div class="card-body">
+                        <p class="mb-0">
+                          EysisBoard® ekibi, kurumlarımızda kullanılan
+                          cihazların çok çeşitli işletim sistemleri üzerinde
+                          çalıştığının bilincinde olarak uygulamayı
+                          multi-platform haline getirmek için yoğun mesai
+                          harcamaktadır.
+                          <br /> <br />
+                          Uygulama, Microsoft Windows Xp'den, Microsoft
+                          Windows'un son sürümüne, Pardus Etap 5'den Pardus
+                          Etap son sürümüne, ve Apple Mac OS X 10.0
+                          (Cheetah)'dan Mac OS X son sürüme kadar tüm gelişmiş
+                          masaüstü işletim sistemlerini desteklemektedir.
+                          <br /> <br />
+                          Bunların yanında Google Android 5 üzeri ve Apple IOS
+                          10 ve üzeri mobil işletim sistemleri üzerinde
+                          de çalışabilmektedir. Kurulum ve kullanım ile ilgili
+                          yönergeler, sitemizdeki ilgili işletim
+                          sistemi bağlantılarından takip edilebilir.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card border-light mb-0">
+                    <div class="card-header" id="headingThree">
+                      <h2 class="mb-0">
+                        <button
+                          class="btn btn-link btn-block d-flex justify-content-between text-left"
+                          type="button"
+                          data-toggle="collapse" data-target="#collapseThree"
+                          aria-expanded="false"
+                          aria-controls="collapseThree">
+                          <span class="h6 mb-0 font-weight-bold">Kurumsal
+                            olarak kendi yayınlarımız için kullanabilir
+                            miyiz?</span>
+                          <span class="icon"><span
+                              class="fas fa-plus"></span></span>
+                        </button>
+                      </h2>
+                    </div>
+                    <div id="collapseThree" class="collapse"
+                      aria-labelledby="headingThree"
+                      data-parent="#accordionExample">
+                      <div class="card-body">
+                        <p class="mb-0">
+                          EysisBoard®'u kendi özel yayınlarınızı interaktif
+                          hale getirmek için kullanabilirsiniz.
+                          Yayınlarınızın dijital formatlarını EYSIS®'in içerik
+                          dağıtma ağını (ECDN) kullarak dünyanın
+                          çeşitli ülkelerinde erişime açabilirsiniz.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--End of Accordion-->
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="section bg-soft" id="download">
+          <figure
+            class="position-absolute top-0 left-0 w-100 d-none d-md-block mt-n3">
+            <svg class="fill-soft" version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              viewBox="0 0 1920 43.4"
+              style="enable-background:new 0 0 1920 43.4;"
+              xml:space="preserve">
+              <path
+                d="M0,23.3c0,0,405.1-43.5,697.6,0c316.5,1.5,108.9-2.6,480.4-14.1c0,0,139-12.2,458.7,14.3 c0,0,67.8,19.2,283.3-22.7v35.1H0V23.3z">
+              </path>
+            </svg>
+          </figure>
+          <div class="container">
+            <div class="row row-grid align-items-center">
+              <div class="col-12 col-lg-6">
+                <span class="h5 text-muted mb-2 d-block">Uygulamayı
+                  İndir</span>
+                <h2 class="display-3 mb-4">Saniyeler İçinde Başlayın</h2>
+                <p class="lead text-muted">Uygulamayı indirin, Yayınevi
+                  kodunuzu girin ve kullanmaya başlayın. Daha fazla
+                  özellikten faydalanmak için uygulamaya giriş yapın!</p>
+                <div class="mt-4 mt-lg-5">
+                  <a href="#"
+                    class="btn btn-dark btn-download-app mb-xl-0 mr-2 mr-md-3">
+                    <span class="d-flex align-items-center">
+                      <span class="icon icon-brand mr-2 mr-md-3"><span
+                          class="fab fa-apple"></span></span>
+                      <span class="d-inline-block text-left">
+                        <small
+                          class="font-weight-normal d-none d-md-block">Available
+                          on</small> App Store
+                      </span>
+                    </span>
+                  </a>
+                  <a href="#" class="btn btn-dark btn-download-app">
+                    <span class="d-flex align-items-center">
+                      <span class="icon icon-brand mr-2 mr-md-3"><span
+                          class="fab fa-google-play"></span></span>
+                      <span class="d-inline-block text-left">
+                        <small
+                          class="font-weight-normal d-none d-md-block">Available
+                          on</small> Google Play
+                      </span>
+                    </span>
+                  </a>
+                </div>
+
+              </div>
+
+              <div class="col-12 col-lg-5 ml-lg-auto">
+                <img class="d-none d-lg-inline-block"
+                  src="https://eboard.eysis.io/assets/img/illustrations/scene-3.svg"
+                  alt="Mobile App Illustration">
+              </div>
+
+              <div class="row justify-content-center mt-5">
+                <div class="col-12">
+                  <!--Accordion-->
+                  <div class="accordion" id="accordionExample">
+                    <div class="card border-light mb-0">
+                      <div class="card-header" id="headingOne">
+                        <div class="row row-grid">
+                          <div class="col-6 ml-lg-auto">
+                            <h2 class="mb-0">
+                              <button
+                                class="btn btn-link btn-block d-flex justify-content-between text-left"
+                                type="button"
+                                data-toggle="collapse"
+                                data-target="#collapseOne"
+                                aria-expanded="true"
+                                aria-controls="collapseOne">
+                                <span class="h6 mb-0 font-weight-bold">
+                                  <span class="icon icon-brand display-5">
+                                    <span class="fab fa-windows mb-1"
+                                      style='font-size:32px'></span>
+                                    <small
+                                      class="ml-2 d-none d-md-block">Windows
+                                      XP, Windows 7, Windows 8</small>
+                                  </span>
+                                </span>
+                              </button>
+                            </h2>
+                          </div>
+                          <div class="col-3 text-right">
+                            <h2 class="mb-0">
+                              <button class="btn btn-link text-right"
+                                type="button" data-toggle="collapse"
+                                data-target="#collapseOne"
+                                aria-expanded="true"
+                                aria-controls="collapseOne">
+                                <span
+                                  class="h6 mb-0 font-weight-bold">Kurulum</span>
+                                <br /><small class="ml-4 pl-3 body-1">32 Bit /
+                                  3.32 MB</small>
+                              </button>
+                            </h2>
+                          </div>
+                          <div class="col-3 text-right">
+                            <h2 class="mb-0">
+                              <button class="btn btn-link text-right"
+                                type="button" data-toggle="collapse"
+                                data-target="#collapseOne"
+                                aria-expanded="true"
+                                aria-controls="collapseOne">
+                                <span
+                                  class="h6 mb-0 font-weight-bold">İndir</span>
+                                <br /><small class="ml-4 pl-3 body-1">32 Bit /
+                                  3.32 MB</small>
+                              </button>
+                            </h2>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="card border-light mb-0">
+                      <div class="card-header" id="headingOne">
+                        <div class="row row-grid">
+                          <div class="col-6 ml-lg-auto">
+                            <h2 class="mb-0">
+                              <button
+                                class="btn btn-link btn-block d-flex justify-content-between text-left"
+                                type="button"
+                                data-toggle="collapse"
+                                data-target="#collapseOne"
+                                aria-expanded="true"
+                                aria-controls="collapseOne">
+                                <span class="h6 mb-0 font-weight-bold">
+                                  <span class="icon icon-brand display-5">
+                                    <span class="fab fa-windows mb-1"
+                                      style='font-size:32px'></span>
+                                    <small
+                                      class="ml-2 d-none d-md-block">Windows
+                                      8, Windows 10, Windows 11</small>
+                                  </span>
+                                </span>
+                              </button>
+                            </h2>
+                          </div>
+                          <div class="col-3 text-right">
+                            <h2 class="mb-0">
+                              <button class="btn btn-link text-right"
+                                type="button" data-toggle="collapse"
+                                data-target="#collapseOne"
+                                aria-expanded="true"
+                                aria-controls="collapseOne">
+                                <span
+                                  class="h6 mb-0 font-weight-bold">Kurulum</span>
+                                <br /><small class="ml-4 pl-3 body-1">32 Bit /
+                                  3.32 MB</small>
+                              </button>
+                            </h2>
+                          </div>
+                          <div class="col-3 text-right">
+                            <h2 class="mb-0">
+                              <button class="btn btn-link text-right"
+                                type="button" data-toggle="collapse"
+                                data-target="#collapseOne"
+                                aria-expanded="true"
+                                aria-controls="collapseOne">
+                                <span
+                                  class="h6 mb-0 font-weight-bold">İndir</span>
+                                <br /><small class="ml-4 pl-3 body-1">64 Bit /
+                                  13.32 MB</small>
+                              </button>
+                            </h2>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card border-light mb-0">
+                      <div class="card-header" id="headingOne">
+                        <div class="row row-grid">
+                          <div class="col-6 ml-lg-auto">
+                            <h2 class="mb-0">
+                              <button
+                                class="btn btn-link btn-block d-flex justify-content-between text-left"
+                                type="button"
+                                data-toggle="collapse"
+                                data-target="#collapseOne"
+                                aria-expanded="true"
+                                aria-controls="collapseOne">
+                                <span class="h6 mb-0 font-weight-bold">
+                                  <span class="icon icon-brand display-5">
+                                    <span class="fab fa-linux mb-1"
+                                      style='font-size:32px'></span>
+                                    <small
+                                      class="ml-2 d-none d-md-block">Pardus
+                                      Etap 5, Pardus Etap 6</small>
+                                  </span>
+                                </span>
+                              </button>
+                            </h2>
+                          </div>
+                          <div class="col-3 text-right">
+                            <h2 class="mb-0">
+                              <button class="btn btn-link text-right"
+                                type="button" data-toggle="collapse"
+                                data-target="#collapseOne"
+                                aria-expanded="true"
+                                aria-controls="collapseOne">
+                                <span
+                                  class="h6 mb-0 font-weight-bold">Kurulum</span>
+                                <br /><small class="ml-4 pl-3 body-1">32 Bit /
+                                  3.32 MB</small>
+                              </button>
+                            </h2>
+                          </div>
+                          <div class="col-3 text-right">
+                            <h2 class="mb-0">
+                              <button class="btn btn-link text-right"
+                                type="button" data-toggle="collapse"
+                                data-target="#collapseOne"
+                                aria-expanded="true"
+                                aria-controls="collapseOne">
+                                <span
+                                  class="h6 mb-0 font-weight-bold">İndir</span>
+                                <br /><small class="ml-4 pl-3 body-1">64 Bit /
+                                  13.32 MB</small>
+                              </button>
+                            </h2>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card border-light mb-0">
+                      <div class="card-header" id="headingOne">
+                        <div class="row row-grid">
+                          <div class="col-6 ml-lg-auto">
+                            <h2 class="mb-0">
+                              <button
+                                class="btn btn-link btn-block d-flex justify-content-between text-left"
+                                type="button"
+                                data-toggle="collapse"
+                                data-target="#collapseOne"
+                                aria-expanded="true"
+                                aria-controls="collapseOne">
+                                <span class="h6 mb-0 font-weight-bold">
+                                  <span class="icon icon-brand display-5">
+                                    <span class="fab fa-linux mb-1"
+                                      style='font-size:32px'></span>
+                                    <small
+                                      class="ml-2 d-none d-md-block">Pardus
+                                      Etap 19, Pardus Etap 21</small>
+                                  </span>
+                                </span>
+                              </button>
+                            </h2>
+                          </div>
+                          <div class="col-3 text-right">
+                            <h2 class="mb-0">
+                              <button class="btn btn-link text-right"
+                                type="button" data-toggle="collapse"
+                                data-target="#collapseOne"
+                                aria-expanded="true"
+                                aria-controls="collapseOne">
+                                <span
+                                  class="h6 mb-0 font-weight-bold">Kurulum</span>
+                                <br /><small class="ml-4 pl-3 body-1">32 Bit /
+                                  3.32 MB</small>
+                              </button>
+                            </h2>
+                          </div>
+                          <div class="col-3 text-right">
+                            <h2 class="mb-0">
+                              <button class="btn btn-link text-right"
+                                type="button" data-toggle="collapse"
+                                data-target="#collapseOne"
+                                aria-expanded="true"
+                                aria-controls="collapseOne">
+                                <span
+                                  class="h6 mb-0 font-weight-bold">İndir</span>
+                                <br /><small class="ml-4 pl-3 body-1">64 Bit /
+                                  13.32 MB</small>
+                              </button>
+                            </h2>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card border-light mb-0">
+                      <div class="card-header" id="headingOne">
+                        <div class="row row-grid">
+                          <div class="col-6 ml-lg-auto">
+                            <h2 class="mb-0">
+                              <button
+                                class="btn btn-link btn-block d-flex justify-content-between text-left"
+                                type="button"
+                                data-toggle="collapse"
+                                data-target="#collapseOne"
+                                aria-expanded="true"
+                                aria-controls="collapseOne">
+                                <span class="h6 mb-0 font-weight-bold">
+                                  <span class="icon icon-brand display-5">
+                                    <span class="fab fa-android mb-1"
+                                      style='font-size:32px'></span>
+                                    <small
+                                      class="ml-2 d-none d-md-block">Android
+                                      6, Android 10</small>
+                                  </span>
+                                </span>
+                              </button>
+                            </h2>
+                          </div>
+                          <div class="col-3 text-right">
+                            <h2 class="mb-0">
+                              <button class="btn btn-link text-right"
+                                type="button" data-toggle="collapse"
+                                data-target="#collapseOne"
+                                aria-expanded="true"
+                                aria-controls="collapseOne">
+                                <span
+                                  class="h6 mb-0 font-weight-bold">Kurulum</span>
+                                <br /><small class="ml-4 pl-3 body-1">32 Bit /
+                                  3.32 MB</small>
+                              </button>
+                            </h2>
+                          </div>
+                          <div class="col-3 text-right">
+                            <h2 class="mb-0">
+                              <button class="btn btn-link text-right"
+                                type="button" data-toggle="collapse"
+                                data-target="#collapseOne"
+                                aria-expanded="true"
+                                aria-controls="collapseOne">
+                                <span
+                                  class="h6 mb-0 font-weight-bold">İndir</span>
+                                <br /><small class="ml-4 pl-3 body-1">64 Bit /
+                                  13.32 MB</small>
+                              </button>
+                            </h2>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card border-light mb-0">
+                      <div class="card-header" id="headingOne">
+                        <div class="row row-grid">
+                          <div class="col-6 ml-lg-auto">
+                            <h2 class="mb-0">
+                              <button
+                                class="btn btn-link btn-block d-flex justify-content-between text-left"
+                                type="button"
+                                data-toggle="collapse"
+                                data-target="#collapseOne"
+                                aria-expanded="true"
+                                aria-controls="collapseOne">
+                                <span class="h6 mb-0 font-weight-bold">
+                                  <span class="icon icon-brand display-5">
+                                    <span class="fab fa-android mb-1"
+                                      style='font-size:32px'></span>
+                                    <small
+                                      class="ml-2 d-none d-md-block">Android
+                                      11, Android 12</small>
+                                  </span>
+                                </span>
+                              </button>
+                            </h2>
+                          </div>
+                          <div class="col-3 text-right">
+                            <h2 class="mb-0">
+                              <button class="btn btn-link text-right"
+                                type="button" data-toggle="collapse"
+                                data-target="#collapseOne"
+                                aria-expanded="true"
+                                aria-controls="collapseOne">
+                                <span
+                                  class="h6 mb-0 font-weight-bold">Kurulum</span>
+                                <br /><small class="ml-4 pl-3 body-1">32 Bit /
+                                  3.32 MB</small>
+                              </button>
+                            </h2>
+                          </div>
+                          <div class="col-3 text-right">
+                            <h2 class="mb-0">
+                              <button class="btn btn-link text-right"
+                                type="button" data-toggle="collapse"
+                                data-target="#collapseOne"
+                                aria-expanded="true"
+                                aria-controls="collapseOne">
+                                <span
+                                  class="h6 mb-0 font-weight-bold">İndir</span>
+                                <br /><small class="ml-4 pl-3 body-1">64 Bit /
+                                  13.32 MB</small>
+                              </button>
+                            </h2>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card border-light mb-0">
+                      <div class="card-header" id="headingOne">
+                        <div class="row row-grid">
+                          <div class="col-6 ml-lg-auto">
+                            <h2 class="mb-0">
+                              <button
+                                class="btn btn-link btn-block d-flex justify-content-between text-left"
+                                type="button"
+                                data-toggle="collapse"
+                                data-target="#collapseOne"
+                                aria-expanded="true"
+                                aria-controls="collapseOne">
+                                <span class="h6 mb-0 font-weight-bold">
+                                  <span class="icon icon-brand display-5">
+                                    <span class="fab fa-apple mb-2"
+                                      style='font-size:32px'></span>
+                                    <small class="ml-2 d-none d-md-block">Mac
+                                      OS X 10, Mac OS X 12</small>
+                                  </span>
+                                </span>
+                              </button>
+                            </h2>
+                          </div>
+                          <div class="col-3 text-right">
+                            <h2 class="mb-0">
+                              <button class="btn btn-link text-right"
+                                type="button" data-toggle="collapse"
+                                data-target="#collapseOne"
+                                aria-expanded="true"
+                                aria-controls="collapseOne">
+                                <span
+                                  class="h6 mb-0 font-weight-bold">Kurulum</span>
+                                <br /><small class="ml-4 pl-3 body-1">32 Bit /
+                                  3.32 MB</small>
+                              </button>
+                            </h2>
+                          </div>
+                          <div class="col-3 text-right">
+                            <h2 class="mb-0">
+                              <button class="btn btn-link text-right"
+                                type="button" data-toggle="collapse"
+                                data-target="#collapseOne"
+                                aria-expanded="true"
+                                aria-controls="collapseOne">
+                                <span
+                                  class="h6 mb-0 font-weight-bold">İndir</span>
+                                <br /><small class="ml-4 pl-3 body-1">64 Bit /
+                                  13.32 MB</small>
+                              </button>
+                            </h2>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <div id="contact">
+        <template>
+          <div class="container">
+            <form class="form" @submit.prevent="submitForm">
+              <p class="title">Contact Us</p>
+              <p class="message">Feel free to send us a message. We’ll get
+                back to you as soon as possible.</p>
+
+              <label>
+                <input v-model="fullName" required type="text" class="input"
+                  placeholder="">
+                <span>Full Name</span>
+              </label>
+
+              <label>
+                <input v-model="email" required type="email" class="input"
+                placeholder="">
+                <span>Email</span>
+              </label>
+
+              <label>
+                <input v-model="subject" required type="text" class="input"
+                placeholder="">
+                <span>Subject</span>
+              </label>
+
+              <label>
+                <textarea v-model="message" required class="input"
+                  style="height:150px;" placeholder=""></textarea>
+                <span>Message</span>
+              </label>
+
+              <button class="submit" type="submit">Send Message</button>
+            </form>
+          </div>
+        </template>
+        <div id="app"></div>
+      </div>
+
+      <script type="module">
+      import { createApp } from 'https://cdn.jsdelivr.net/npm/vue@3/dist/vue.esm-browser.js';
+
+const app = createApp({
+    data() {
+        return {
+            yayinevi: '',
+            fullName: '',
+            email: '',
+            phonenumber: '',
+            subject: '',
+            message: '',
+            loading: false,
+            error: '',
+            success: '',
+            messageVisible: false,
+            timer: 3,
+            progressWidth: 0
+        };
+    },
+    methods: {
+        async submitForm() {
+            if (this.yayinevi && this.fullName && this.email && this.phonenumber && this.subject && this.message) {
+                try {
+                    this.loading = true;
+
+                    // Construct query parameters
+                    const queryParams = new URLSearchParams({
+                        yayinevi: this.yayinevi,
+                        fullName: this.fullName,
+                        email: this.email,
+                        phonenumber: this.phonenumber,
+                        subject: this.subject,
+                        message: this.message,
+                        mailAdresleri: 'saglam.mehmet@gmail.com',
+                        mesaj: `${this.fullName} adlı kişiden mesaj var: ${this.message}`,
+                        fromMail: 'mail@bgs.io',
+                        fromName: 'EysisBoard'
+                    }).toString();
+
+                    const response = await fetch(`https://digipo.web.tr/api/mail/?tema=mail&${queryParams}`, {
+                        method: 'GET',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        }
+                    });
+
+                    if (!response.ok) {
+                        throw new Error('Gönderim başarısız oldu.');
+                    }
+
+                    console.log("Form Gönderildi!", { yayinevi: this.yayinevi, fullName: this.fullName, email: this.email, phonenumber: this.phonenumber, subject: this.subject, message: this.message });
+
+                    // Clear the form
+                    this.clearForm();
+                    this.success = 'Form başarıyla gönderildi!';
+                    this.error = '';
+                } catch (error) {
+                    console.error('Gönderim hatası:', error);
+                    this.error = 'Form gönderiminde bir hata oluştu.';
+                    this.success = '';
+                } finally {
+                    this.loading = false;
+                    this.messageVisible = true; // Make the message visible
+                    this.startTimer(); // Start the timer
+                }
+            } else {
+                alert("Lütfen tüm alanları doldurun.");
+            }
+        },
+        clearForm() {
+            this.yayinevi = '';
+            this.fullName = '';
+            this.email = '';
+            this.phonenumber = '';
+            this.subject = '';
+            this.message = '';
+        },
+        startTimer() {
+            this.timer = 3;
+            this.progressWidth = 100;
+
+            const countdown = setInterval(() => {
+                this.timer--;
+                this.progressWidth -= 33.33; // Reduce by 33.33 each second
+
+                if (this.timer <= 0) {
+                    clearInterval(countdown);
+                    this.messageVisible = false; // Hide the message
+                }
+            }, 1000);
+        }
+    },
+    template: `
+        <form class="form" @submit.prevent="submitForm">
+            <p class="title">İletişim Formu</p>
+            <label>
+                <input v-model="yayinevi" required placeholder="" type="text" class="input">
+                <span class="span2">Yayınevi İsmi</span>
+            </label>
+            <label>
+                <input v-model="fullName" required placeholder="" type="text" class="input">
+                <span class="span2">Temsilcinin Adı Soyadı</span>
+            </label>
+            <label>
+                <input v-model="email" required placeholder="" type="email" class="input">
+                <span class="span2">E-Posta Adresiniz</span>
+            </label>
+            <label>
+                <input v-model="phonenumber" required placeholder="" type="tel" class="input">
+                <span class="span2">Telefon Numaranız</span>
+            </label>
+            <label>
+                <input v-model="subject" required placeholder="" type="text" class="input">
+                <span class="span2">Konu</span>
+            </label>
+            <label>
+                <textarea v-model="message" required placeholder="" class="input"></textarea>
+                <span class="span2">Mesajınız</span>
+            </label>
+            <button class="submit" type="submit" :disabled="loading">
+                <span v-if="loading">Gönderiliyor...</span>
+                <span v-else>Mesajı Gönder</span>
+            </button>
+        </form>
+        <transition name="fade">
+            <div v-if="messageVisible" class="message" :class="{'success': success, 'error': error}">
+                {{ success || error }}
+                <div class="progress" :style="{ width: progressWidth + '%' }"></div> <!-- Progress bar -->
+            </div>
+        </transition>
+    `
+});
+
+app.mount('#app');
+
+
+      </script>
+    
+    
+
+<footer class="footer py-5 pt-lg-6">
+  <div class="sticky-right">
+    <a href="#navbar_global" class="icon icon-primary icon-md btn btn-icon-only btn-white border border-soft shadow-soft animate-up-3" @click="closeMenu">
+      <span class="fas fa-chevron-up"></span>
+    </a>
+</div>
+  <div class="container">
+      <div class="row justify-content-between">
+          <div class="col-md-4">
+              <p>EysisBoard® BGS Interaktif Bireysel Gelişim Sistemleri A.Ş.`nin EYSIS® Ekosistemi için geliştirdiği tescilli markasıdır.</p>
+              <a href="https://bgs.io" target="_blank" class="btn btn-md btn-tertiary text-white d-none d-md-inline animate-up-2">BGS Interaktif Web<i class="fas fa-rocket ml-2"></i></a>
+          </div>
+          <div class="col-6 col-md-2 mb-5 mb-lg-0">
+              <span class="h5">EysisBoard®</span>
+              <ul class="footer-links mt-2">
+                <li><a class="nav-link" href="#faq">Sık Sorulan Sorular</a></li>
+                <li><a class="nav-link" href="#properties">Özellikler</a></li>
+                <li><a class="nav-link" href="#download">İndirmeler</a></li>
+                <li><a class="nav-link" href="#contact">İletişim</a></li>
+              </ul>
+          </div>
+          <div class="col-12 col-md-4 mb-5 mb-lg-0 text-center">
+              <span class="h5 mb-3 d-block" style="color: #183b56;">Sosyal Medyalarımız</span>
+              <ul class="social-buttons mb-5 mb-lg-0">
+                  <li>
+                      <a href="https://twitter.com/EysisBoard Team" aria-label="twitter social link" class="icon icon-md icon-twitter mr-3">
+                          <span class="fab fa-twitter"></span>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="https://www.facebook.com/EysisBoard Team/" class="icon icon-md icon-facebook mr-3" aria-label="facebook social link">
+                          <span class="fab fa-facebook"></span>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="https://github.com/EysisBoard Team" aria-label="github social link" class="icon icon-md icon-github mr-3">
+                          <span class="fab fa-github"></span>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="https://dribbble.com/EysisBoard Team" class="icon icon-md icon-dribbble" aria-label="dribbble social link">
+                          <span class="fab fa-dribbble"></span>
+                      </a>
+                  </li>
+              </ul>
+              <p class="text-muted font-small m-0 mt-2" style="color: #183b56;">Geliştirmelerden haberdar olun.</p>
+          </div>
+      </div>
+      <hr class="bg-light my-2">
+      <div class="row pt-2 pt-lg-5">
+          <div class="col mb-md-0">
+              <div class="d-flex text-center justify-content-center align-items-center" role="contentinfo">
+                  <p class="font-weight-normal font-small mb-0">
+                    <a href="https://bgs.io" style="text-decoration: none;">Copyright © BGS Interaktif Bireysel Gelişim Sist. A.Ş. / EysisBoard® 2019-</a><span class="current-year"></span>
+                      <br />
+                      Her hakkı saklıdır.
+                  </p>
+              </div>
+          </div>
+      </div>
+  </div>
+</footer>
+
+    </div>  
+    <!-- Core -->
+    <script src="./vendor/popper.js/dist/umd/popper.min.js"></script>
+    <script src="./vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./vendor/headroom.js/dist/headroom.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"
+      integrity="sha512-ykZ1QQr0Jy/4ZkvKuqWn4iF3lqPZyij9iRv6sGqLRdTPkY69YX6+7wvVGmsdBbiIfN/8OdsI7HABjvEok6ZopQ=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script src="https://unpkg.com/vue@next"></script>
+
+    <!-- Vendor JS -->
+    <script src="./vendor/onscreen/dist/on-screen.umd.min.js"></script>
+    <script
+      src="./vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+    <!-- Swipe JS -->
+    <script src="./assets/js/swipe.js"></script>
+
+    <!--Js-->
+    <script src="js/loader.js"></script>
+
+    <!-- Vue JS -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
+  </body>
+</html>
