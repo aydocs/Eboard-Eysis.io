@@ -54,5 +54,5 @@ Your input is always appreciated and helps improve future versions. 🙏
 
 ---
 
-> *"It’s not over until it’s truly over.”*  
+> *"Now your smile is fake, your eyes are always tired.”*  
 > *– Aydocs*
